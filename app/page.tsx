@@ -37,7 +37,7 @@ export default function Home() {
   };
 
   return (
-    <main className="relative min-h-screen w-full bg-gray-950 text-white overflow-hidden flex flex-col justify-center items-center px-4">
+    <main className="relative min-h-screen w-full bg-slate-950 text-white overflow-hidden flex flex-col justify-center items-center px-4">
 
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
