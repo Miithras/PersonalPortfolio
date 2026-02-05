@@ -24,11 +24,34 @@ export default function Home() {
     },
   };
 
+  const bgVariants: Variants = {
+    hidden: { opacity: 0, scale: 0.8 }, // Empieza un poco más pequeño e invisible
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        duration: 1.5, // Tarda 1.5 segundos en aparecer completamente
+        ease: "easeOut",
+      },
+    },
+  };
+
   return (
     <main className="relative min-h-screen w-full bg-gray-950 text-white overflow-hidden flex flex-col justify-center items-center px-4">
+
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-[-10%] left-[-10%] w-160 h-160 bg-pink-950/40 rounded-full blur-[100px] transition-opacity" />
-        <div className="absolute bottom-[-10%] right-[-10%] w-160 h-160 bg-blue-500/10 rounded-full blur-[100px]" />
+        <motion.div
+          variants={bgVariants}
+          initial="hidden"
+          animate="visible"
+          className="absolute top-[-10%] left-[-10%] w-160 h-160 bg-rose-950/30 rounded-full blur-[100px]"
+        />
+        <motion.div
+          variants={bgVariants}
+          initial="hidden"
+          animate="visible"
+          className="absolute bottom-[-10%] right-[-10%] w-160 h-160 bg-blue-500/10 rounded-full blur-[100px]"
+        />
       </div>
 
       <motion.div
