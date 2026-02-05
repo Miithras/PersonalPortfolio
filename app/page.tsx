@@ -9,7 +9,7 @@ export default function Home() {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1, //Atributo staggerChildren represnta el tiempo que demora el siguiente objeto en aparecer después del anterior
+        staggerChildren: 0.2, //Atributo staggerChildren represnta el tiempo que demora el siguiente objeto en aparecer después del anterior
         delayChildren: 0.3,
       },
     },
