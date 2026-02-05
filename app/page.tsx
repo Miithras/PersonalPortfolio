@@ -1,11 +1,11 @@
 "use client"; // Necesario para Framer Motion en App Router
 
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { Github, Linkedin, Mail, ArrowRight } from "lucide-react";
 
 export default function Home() {
   // Variantes para la animación escalonada (stagger)
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -16,7 +16,7 @@ export default function Home() {
     },
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { y: 20, opacity: 0 }, // Empieza 20px abajo e invisible
     visible: {
       y: 0,
@@ -52,8 +52,8 @@ export default function Home() {
           variants={itemVariants}
           className="text-5xl md:text-7xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-400 mb-6"
         >
-          Ingeniero en Informática <br />
-          <span className="text-indigo-400">& Desarrollador Full Stack</span>
+          Ingeniero en informática <br />
+          <span className="text-indigo-400">y desarrollador full stack</span>
         </motion.h1>
 
         {/* Subtítulo / Descripción */}
@@ -74,7 +74,7 @@ export default function Home() {
             Ver Portafolio
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </button>
-          
+
           <button className="px-8 py-3 rounded-full border border-slate-700 text-white font-medium hover:bg-slate-800/50 transition-colors backdrop-blur-sm">
             Contactar
           </button>
