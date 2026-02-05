@@ -1,4 +1,4 @@
-"use client"; // Necesario para Framer Motion en App Router
+"use client";
 
 import { motion, Variants } from "framer-motion";
 import { Github, Linkedin, Mail, ArrowRight } from "lucide-react";
