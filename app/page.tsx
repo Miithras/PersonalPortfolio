@@ -95,10 +95,6 @@ export default function Home() {
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </button>
           </Link>
-
-          <button className="px-8 py-3 rounded-full border border-slate-700 text-white font-medium hover:bg-slate-800/50 transition-colors backdrop-blur-sm">
-            Contactar
-          </button>
         </motion.div>
 
         <motion.div
