@@ -2,6 +2,7 @@
 
 import { motion, Variants } from "framer-motion";
 import { Github, Linkedin, Mail, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
   const containerVariants: Variants = {
@@ -88,10 +89,12 @@ export default function Home() {
           variants={itemVariants}
           className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
-          <button className="group flex items-center gap-2 px-8 py-3 bg-white text-black rounded-full font-semibold hover:bg-slate-200 transition-colors">
-            Ver Portafolio
-            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </button>
+          <Link href="/portafolio">
+            <button className="group flex items-center gap-2 px-8 py-3 bg-white text-black rounded-full font-semibold hover:bg-slate-200 transition-colors">
+              Ver Portafolio
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </button>
+          </Link>
 
           <button className="px-8 py-3 rounded-full border border-slate-700 text-white font-medium hover:bg-slate-800/50 transition-colors backdrop-blur-sm">
             Contactar
