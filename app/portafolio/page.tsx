@@ -2,7 +2,7 @@
 
 import { motion, Variants } from "framer-motion";
 import Link from "next/link";
-import { ArrowLeft, Database, Server, BarChart3, Code2, Globe, Package } from 'lucide-react';
+import { ArrowLeft, Database, Server, BarChart3, Code2, Globe, Package, Mail } from 'lucide-react';
 
 export default function Portfolio() {
 
@@ -193,9 +193,13 @@ export default function Portfolio() {
             <p className="text-slate-400 mb-8 max-w-xl mx-auto">
               Si te interesa mi perfil técnico o tienes una idea de proyecto, hablemos.
             </p>
-            <button className="px-8 py-3 bg-white text-slate-950 rounded-full font-bold hover:bg-slate-200 transition-colors">
-              Iniciar Conversación
-            </button>
+            <a
+              href="mailto:diegoh2004@gmail.com?subject=Estoy interesado en tu perfil&body=Hola, vi tu portafolio y me gustaría hablar acerca de"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-white text-slate-950 rounded-full font-bold hover:bg-slate-200 hover:scale-105 transition-all duration-300 shadow-lg shadow-indigo-500/20"
+            >
+              <Mail className="w-5 h-5" />
+              Enviar Correo
+            </a>
           </motion.section>
 
           <footer className="mt-20 py-8 text-center text-slate-600 text-sm border-t border-slate-900">
