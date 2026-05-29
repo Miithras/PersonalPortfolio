@@ -2,7 +2,7 @@
 
 import { motion, Variants } from "framer-motion";
 import Link from "next/link";
-import { ArrowLeft, Database, Server, BarChart3, Code2, Globe, Package, Mail } from 'lucide-react';
+import { ArrowLeft, Database, Server, BarChart3, Code2, Globe, Package, Mail, LayoutDashboard } from 'lucide-react';
 
 export default function Portfolio() {
 
@@ -55,8 +55,8 @@ export default function Portfolio() {
   const projects = [
     {
       title: 'Sistema de Gestión',
-      description: 'Plataforma backend para gestión de inventarios y facturación con microservicios.',
-      tech: ['Node.js', 'PostgreSQL', 'Docker', 'Redis'],
+      description: 'Aplicación web para gestión de inventario.',
+      tech: ['Node.js', 'PostgreSQL', 'Docker'],
       icon: <Database className="w-8 h-8" />
     },
     {
@@ -68,8 +68,14 @@ export default function Portfolio() {
     {
       title: 'Pipeline ETL Big Data',
       description: 'Sistema automatizado de extracción y transformación de datos.',
-      tech: ['Python', 'Airflow', 'AWS S3', 'Snowflake'],
+      tech: ['Python', 'AWS S3', 'SSIS', 'SSAS'],
       icon: <Package className="w-8 h-8" />
+    },
+    {
+      title: 'Dashboard control de asistencia',
+      description: 'Aplicación web para realizar seguimiento de asistencia al trabajo',
+      tech: ['TypeScript', 'Node', 'FastAPI', 'OCR', 'SQLite', 'Supabase'],
+      icon: <LayoutDashboard className="w-8 h-8"/>
     }
   ];
 
@@ -111,11 +117,9 @@ export default function Portfolio() {
         >
           {/* Título de Sección */}
           <motion.div variants={itemVariants} className="mb-16">
-            <span className="px-3 py-1 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-300 text-sm mb-4 inline-block">
-              Portafolio Profesional
-            </span>
-            <h1 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-400">
-              Proyectos y <span className="text-indigo-400">Habilidades</span>
+           
+            <h1 className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-400">
+              Proyectos y <span className="text-indigo-400">habilidades</span>
             </h1>
           </motion.div>
 
@@ -129,7 +133,7 @@ export default function Portfolio() {
                 <motion.div
                   key={index}
                   whileHover={{ y: -5 }}
-                  className="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 hover:border-indigo-500/30 hover:bg-slate-800/50 transition-all duration-300 backdrop-blur-sm"
+                  className="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 hover:border-indigo-500/30 hover:bg-slate-800/50 backdrop-blur-sm"
                 >
                   <div className="text-indigo-400 mb-4 bg-indigo-500/10 w-fit p-3 rounded-xl">{skill.icon}</div>
                   <h3 className="text-xl font-medium mb-4 text-white">{skill.category}</h3>

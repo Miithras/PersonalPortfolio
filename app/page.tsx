@@ -104,7 +104,7 @@ export default function Home() {
             <a href="https://github.com/Miithras" className="hover:text-white transition-colors hover:scale-110 transform duration-200" title="Github link">
               <Github className="w-8 h-8" />
             </a>
-            <a href="https://www.linkedin.com/in/diegohenriquez-47822b251/" className="hover:text-blue-400 transition-colors hover:scale-110 transform duration-200" title="LinkedIn Link">
+            <a href="https://www.linkedin.com/in/diegohenriquez-47822b251" className="hover:text-blue-400 transition-colors hover:scale-110 transform duration-200" title="LinkedIn Link">
               <Linkedin className="w-8 h-8" />
             </a>
             <a href="https://www.diegoh2004@gmail.com" className="hover:text-white transition-colors hover:scale-110 transform duration-200" title="Mail link">
